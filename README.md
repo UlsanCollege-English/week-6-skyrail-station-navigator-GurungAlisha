@@ -7,7 +7,7 @@ This program implements a binary tree node structure and five core tree operatio
 ---
 
 ## Approach
-- **Preorder traversal:** Visit the current node first, then recurse left, then recurse right. The base case returns `[]` for a `None` node. Results are built by concatenating three lists: `[root.value]`, the left subtree result, and the right subtree result.
+- **Preorder traversal:** Visit the current node first, then recurse left, then recurse right. The base case returns `[]` for a `None` node. Results are built by concatenating .three lists: `[root.value]`, the left subtree result, and the right subtree result.
 - **Inorder traversal:** Recurse left first, then visit the current node, then recurse right. Same base case. This order produces sorted output when the tree is a valid BST.
 - **Postorder traversal:** Recurse left and right first, then visit the current node last. Useful conceptually for bottom-up processing.
 - **BST search (`bst_contains`):** At each node, compare the target to `root.value`. Return `True` if equal, recurse left if smaller, recurse right if larger. Return `False` when `None` is reached.
